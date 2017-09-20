@@ -15,6 +15,7 @@ public class TestController {
 
     @RequestMapping("hello")
     public String hello() {
+        System.out.println("orderServer: /test/hello");
         String s = testService.sayHello();
         System.out.println(s);
         return s;
